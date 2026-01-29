@@ -1,0 +1,91 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Bellefair;
+    src: url(./assets/font/Bellefair-Regular.ttf);
+}
+@font-face {
+    font-family: Barlow;
+    src: url(./assets/font/BarlowCondensed-Regular.ttf);
+}
+body {
+    background-image: url(./assets/crew/background-crew-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+        width: 30px;
+    }
+    .ham {
+        width: 20px;
+    }
+}
+.crew-specialist-container {
+    padding: 20px;
+    width: 100%;
+}
+h1 {
+    font-family: 'barlow';
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 30px;
+    letter-spacing: 3px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.number {
+    color: rgb(141, 137, 137);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'bellefair';
+    text-transform: uppercase;
+    color: rgb(141, 137, 137);
+    font-weight: 500;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'bellefair';
+    text-transform: uppercase;
+    color: white;
+    font-size: 25px;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.para {
+    color: hsl(231, 77%, 90%);
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'barlow';
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    img {
+        width: 300px;
+        mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    }
+}

@@ -1,0 +1,203 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Bellefair;
+    src: url(./assets/font/Bellefair-Regular.ttf);
+}
+@font-face {
+    font-family: Barlow;
+    src: url(./assets/font/BarlowCondensed-Regular.ttf);
+}
+body {
+    background-image: url(./assets/destination/background-destination-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+        width: 30px;
+    }
+    .ham {
+        width: 20px;
+    }
+}
+.destination-moon-container {
+    padding: 20px;
+    width: 100%;
+}
+h1 {
+    font-family: 'barlow';
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 30px;
+    letter-spacing: 3px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.number {
+    color: rgb(141, 137, 137);
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    img {
+        width: 200px;
+    }
+}
+.destination-links {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    a {
+        text-decoration: none;
+        color: hsl(231, 77%, 90%);
+        font-family: 'barlow';
+        font-size: 25px;
+    }
+    a:active {
+        text-decoration: underline;
+    }
+}
+h2 {
+    font-family: 'bellefair';
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.para {
+    color: hsl(231, 77%, 90%);
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'barlow';
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid;
+    padding-bottom: 35px;
+}
+.distance-container {
+    margin-top: 20px;
+}
+.average-distance {
+    display: grid;
+    text-align: center;
+    gap: 10px;
+    .distance {
+        color: hsl(231, 77%, 90%);
+        font-family: 'barlow';
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .kilometer {
+        color: white;
+        font-family: 'bellefair';
+        text-transform: uppercase;
+        font-size: xx-large;
+    }
+}
+.estimated-time-travel {
+    display: grid;
+    text-align: center;
+    gap: 10px;
+    margin-top: 20px;
+    .time {
+        color: hsl(231, 77%, 90%);
+        font-family: 'barlow';
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .days {
+        color: white;
+        font-family: 'bellefair';
+        text-transform: uppercase;
+        font-size: xx-large;
+    }
+}
+
+@media (min-width: 766px) {
+    body {
+        background-image: url(./assets/destination/background-destination-tablet.jpg);
+        background-size: cover;
+    }
+    .destination-moon-container {
+        padding: 60px;
+    }
+    h1 {
+        justify-content: flex-start;
+    }
+    .img-container {
+        margin-top: 80px;
+        img {
+            width: 300px;
+        }
+    }
+    .destination-links {
+        margin-top: 80px;
+    }
+    h2 {
+        font-size: 80px;
+        margin-top: 50px;
+    }
+    .para {
+        text-align: center;
+    }
+    .distance-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .estimated-time-travel {
+            margin-top: 0px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-image: url(./assets/destination/background-destination-desktop.jpg);
+        background-size: cover;
+    }
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .img-container {
+        img {
+            width: 400px;
+        }
+    }
+    .destination-links {
+        justify-content: flex-start;
+    }
+    h2 {
+        text-align: left;
+        font-size: 100px;
+    }
+    .para {
+        text-align: left;
+    }
+    .distance-container {
+        .average-distance, .estimated-time-travel {
+            text-align: left;
+        }
+    }
+}
