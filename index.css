@@ -65,17 +65,17 @@ h1 {
 a {
     border: 1px solid white;
     border-radius: 999px;
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     padding: 40px;
     margin: 20px auto;
     display: block;
+    text-align: center;
     align-content: center;
     text-decoration: none;
     background-color: white;
     color: black;
     font-weight: 500;
-    font-size: 18px;
 }
 
 @media(min-width: 766px) {
