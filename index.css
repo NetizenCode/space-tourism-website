@@ -15,6 +15,7 @@ body {
     background-image: url(./assets/home/background-home-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 .logo-ham-section {
     margin-top: 10px;
@@ -26,6 +27,45 @@ body {
     } 
     .ham {
         width: 20px;
+    }
+    .nav-bar {
+        border: none;
+        width: 80%;
+        padding: 20px 10px;
+        text-align: center;
+        height: 90px;
+        display: none;
+        overflow: hidden;
+        position: absolute;
+        left: 70px;
+        word-spacing: 80px;
+        background-color: rgba(254, 252, 252, 0.1);
+        a {
+            display: inline-flex;
+            gap: 8px;  
+            font-family: 'barlow';
+            color: rgba(254, 252, 252, 0.7);
+            font-weight: 500;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        .bar {
+            text-decoration: none;
+        }
+        .numeric {
+            color: white;
+            font-weight: 600;
+        }
+    }
+    .nav-bar-mobile-container {
+        display: none;
+        width: 200px;
+        padding-top: 10rem;
+        background-color: aliceblue;
+        position: absolute;
+        left: 11.8rem;
+        top: 0px;
+        z-index: 1;
     }
 }
 .space-container {
@@ -62,7 +102,7 @@ h1 {
     line-height: 25px;
     word-break: normal;
 }
-a {
+.button {
     border: 1px solid white;
     border-radius: 999px;
     width: 150px;
@@ -83,6 +123,21 @@ a {
         background-image: url(./assets/home/background-home-tablet.jpg);
         background-size: cover;
     }
+    .logo-ham-section {
+        .logo {
+            width: 80px;
+        }
+        .ham {
+            display: none;
+        }
+        .nav-bar {
+            display: block;
+            left: 155px;
+        }
+        .nav-bar-mobile {
+            display: none;
+        }
+    }
     .text-container {
         margin-top: 80px;
         padding: 70px;
@@ -96,15 +151,26 @@ a {
     .second-para {
         font-size: 17px;
     }
-    button {
+    .button {
         width: 300px;
         border-radius: 999px;
         height: 300px;
+        font-size: 28px;
     }
 }
 @media(min-width: 1024px){
     body {
         background-image: url(./assets/home/background-home-desktop.jpg);
+    }
+    .logo-ham-section {
+        .nav-bar {
+            width: 70%;
+            left: 380px;
+            font-size: 20px;
+        }
+        .nav-bar-mobile {
+            display: none;
+        }
     }
     .wrap {
         display: grid;
@@ -127,9 +193,10 @@ a {
         font-size: 17px;
         text-align: left;
     }
-    button {
-        width: 200px;
+    .button {
+        width: 300px;
         border-radius: 999px;
-        height: 200px;
+        height: 300px;
+        font-size: 28px;
     }
 }
