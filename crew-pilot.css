@@ -78,6 +78,31 @@ h3 {
     line-height: 25px;
     letter-spacing: 1px;
 }
+.crew-links {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    .link {
+        background-color:rgb(106, 103, 103);
+        cursor: pointer;
+    }
+    li a {
+    border-radius: 999px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+    .link:hover {
+        background-color: rgb(224, 218, 218);
+    }
+    .link:active {
+        background-color: white;
+    }
+}
 
 .img-container {
     display: flex;
@@ -85,7 +110,60 @@ h3 {
     justify-content: center;
     margin-top: 100px;
     img {
-        width: 300px;
+        width: 350px;
         mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    }
+}
+
+
+@media (min-width: 766px){
+    body {
+        background-image: url(./assets/crew/background-crew-tablet.jpg);
+        background-size: cover;
+    }
+    h1 {
+        justify-content: flex-start;
+    }
+    .crew-pilot-container {
+        padding: 60px;
+    }
+    .img-container {
+        img {
+            width: 400px;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    body {
+        background-image: url(./assets/crew/background-crew-desktop.jpg);
+        position: relative;
+    }
+    .hero {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    h2 {
+        text-align: left;
+    }
+    h3 {
+        text-align: left;
+        margin-top: 20px;
+    }
+    .para {
+        text-align: left;
+        margin-top: 40px;
+        letter-spacing: 2px;
+    }
+    .crew-links {
+        justify-content: flex-start;
+        position: absolute;
+        bottom: 100px;
+    }
+    .img-container {
+        img {
+            width: 450px;
+        }
     }
 }

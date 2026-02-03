@@ -57,15 +57,38 @@ body {
             font-weight: 600;
         }
     }
-    .nav-bar-mobile-container {
-        display: none;
+    .nav-bar-menu-mobile {
+        padding: 11px;
         width: 200px;
-        padding-top: 10rem;
-        background-color: aliceblue;
+        height: 100vh;
+        background-color: #0B0D17;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(30px);
         position: absolute;
         left: 11.8rem;
         top: 0px;
-        z-index: 1;
+        img {
+            width: 30px;
+            margin-top: 30px;
+            float: right;
+        }
+        .nav-bar-mobile {
+            display: grid;
+            gap: 15px;
+            margin-top: 150px;
+            a {
+                color: white;
+                text-decoration: none;
+                font-family: 'barlow';
+                display: inline-flex;
+                gap: 15px;
+                font-weight: 400;
+            }
+            .numero {
+               font-weight: 900;
+               letter-spacing: 3px;
+            }
+        }
     }
 }
 .space-container {
