@@ -156,7 +156,7 @@ h1 {
         }
         .nav-bar {
             display: block;
-            left: 155px;
+            right: 0px;
         }
         .nav-bar-mobile {
             display: none;
