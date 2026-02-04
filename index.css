@@ -62,7 +62,8 @@ body {
         width: 250px;
         height: 100vh;
         display: none;
-        background-color: #0B0D17;
+        background-color: #0b0d17a6;
+        backdrop-filter: blur(1.5rem);
         position: fixed;
         top: 0px;
         right: 0px;
